@@ -6,9 +6,11 @@ import Image from "next/image";
 function Header() {
   return (
     <header className="bg-white">
-      <div className="mx-auto flex
-       h-16 max-w-screen-xl shadow-sm
-       items-center gap-8 px-4 sm:px-6 lg:px-8">
+      <div
+        className="mx-auto flex
+       h-16 max-w-screen-xl shadow-sm border-b
+       items-center gap-8 px-4 sm:px-6 lg:px-8"
+      >
         <Image src="/logo.svg" alt="logo" width={90} height={100} />
         <div className="flex flex-1 items-center justify-end md:justify-between">
           <nav aria-label="Global" className="hidden md:block">
@@ -27,7 +29,7 @@ function Header() {
                   className="text-gray-500 transition hover:text-gray-500/75"
                   href="/"
                 >
-                  Explor
+                  Upload
                 </a>
               </li>
 
@@ -57,14 +59,7 @@ function Header() {
                 className="block rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-700"
                 href="/"
               >
-                Login
-              </a>
-
-              <a
-                className="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-primary transition hover:text-blue-700/75 sm:block"
-                href="/"
-              >
-                Register
+                Get Startd
               </a>
             </div>
 
